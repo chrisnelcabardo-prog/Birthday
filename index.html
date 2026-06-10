@@ -63,7 +63,7 @@ Thank you for being someone special.
 </div>
 
 <script>
-emailjs.init({publicKey:"{{PUBLIC_KEY}}"});
+emailjs.init({publicKey:"c2zS-SX0xFXHPRgIn"});
 
 function screen(id){
  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
@@ -83,9 +83,9 @@ function showWish(){
 function sendWish(){
  const wish=document.getElementById('wish').value;
 
- emailjs.send("{{SERVICE_ID}}","{{TEMPLATE_ID}}",{
+ emailjs.send("chrisnel885","template_1fn0iym",{
    wish:wish,
-   from_name:"{{NAME}}"
+   from_name:"Chrisnel"
  }).then(()=>{
    screen('s4');
    setTimeout(()=>{
